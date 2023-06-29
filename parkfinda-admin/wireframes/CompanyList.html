@@ -1,0 +1,663 @@
+
+<!-- saved from url=(0036)https://mycarparks.com/admin/company -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Administrator</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="./CompanyList_files/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./CompanyList_files/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="./CompanyList_files/ionicons.min.css">
+    <!-- Bootstrap time Picker -->
+    <link rel="stylesheet" href="./CompanyList_files/bootstrap-timepicker.min.css">
+    <!-- Theme style -->
+    <!-- DataTables -->
+    <link rel="stylesheet" href="./CompanyList_files/dataTables.bootstrap.css">
+    <link href="./CompanyList_files/responsive.bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./CompanyList_files/style.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="./CompanyList_files/_all-skins.css">
+<!--    <link href="https://mycarparks.com/admin/assets/dist/css/skins/skin-black-light.css" rel="stylesheet" type="text/css"/>-->
+    <!-- iCheck -->
+    <link rel="stylesheet" href="./CompanyList_files/blue.css">
+    <link href="./CompanyList_files/layout.css" rel="stylesheet" type="text/css">
+    <link href="./CompanyList_files/style(1).css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="./CompanyList_files/jquery-ui.css">
+    <link href="./CompanyList_files/alertify.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery 2.2.3 -->
+    <script src="./CompanyList_files/jquery-2.2.3.min.js.download"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="./CompanyList_files/jquery-ui.min.js.download"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button);
+    </script>
+    <!-- Bootstrap 3.3.6 -->
+    <script src="./CompanyList_files/bootstrap.min.js.download"></script>
+    <!-- DataTables -->
+    <script src="./CompanyList_files/jquery.dataTables.min.js.download"></script>
+    <script src="./CompanyList_files/dataTables.bootstrap.min.js.download"></script>
+    <script src="./CompanyList_files/dataTables.responsive.min.js.download" type="text/javascript"></script>
+    <script src="./CompanyList_files/responsive.bootstrap.js.download" type="text/javascript"></script>
+    <!-- bootstrap time picker -->
+    <script src="./CompanyList_files/bootstrap-timepicker.min.js.download"></script>
+    <!-- FastClick -->
+    <script src="./CompanyList_files/fastclick.js.download"></script>
+    <!-- AdminLTE App -->
+    <script src="./CompanyList_files/app.min.js.download"></script>
+    <!-- Sparkline -->
+    <script src="./CompanyList_files/jquery.sparkline.min.js.download"></script>
+    <!-- SlimScroll 1.3.0 -->
+    <script src="./CompanyList_files/jquery.slimscroll.min.js.download"></script>
+    <!-- Counter Up  -->
+    <script src="./CompanyList_files/jquery.waypoints.js.download" type="text/javascript"></script>
+    <script src="./CompanyList_files/jquery.counterup.min.js.download" type="text/javascript"></script>
+
+    <script src="./CompanyList_files/loader.js.download" type="text/javascript"></script>
+
+
+    <!-- AdminLTE for demo purposes -->
+    <script src="./CompanyList_files/demo.js.download"></script>
+
+    <script src="./CompanyList_files/jquery.validate.js.download" type="text/javascript"></script>
+    <script type="text/javascript" src="./CompanyList_files/live_date_time.js.download"></script>
+    <script src="./CompanyList_files/daypilot-all.min.js.download" type="text/javascript"></script><style type="text/css"></style>
+    <script src="./CompanyList_files/jquery.form.js.download" type="text/javascript"></script>
+    <script src="./CompanyList_files/alertify.min.js.download" type="text/javascript"></script>
+    <script src="./CompanyList_files/jquery.dataTables.min.js(1).download"></script>
+    <script src="./CompanyList_files/dataTables.bootstrap.min.js(1).download"></script>
+    <style>
+        .form-control{
+            border-radius: 4px;
+        }
+
+        .input-group .input-group-addon{
+            border-radius: 4px;
+            background-color: #eee;
+        }
+
+        .input-group-addon:first-child {
+            border-right: 0 none;
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        .input-group-addon:last-child {
+            border-left: 0 none;
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+        }
+
+        table{
+            font-size: 14px;
+        }
+
+        #ui-datepicker-div{
+            z-index: 999 !important;
+        }
+        .ui-datepicker{
+            z-index: 999 !important;
+        }
+
+        .modal-backdrop{
+            z-index: 0;
+        }
+
+        .modal{
+            top: 25px;
+        }
+
+        .navbar-brand {
+            padding: 0;
+        }
+
+        .panel{
+            border-radius: 6px;
+        }
+
+        .small-box{
+            border-radius: 5px;
+        }
+
+        .small-box > .small-box-footer{
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    </style>
+
+<style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
+
+
+<body class="skin-blue sidebar-mini" data-new-gr-c-s-check-loaded="14.1010.0" data-gr-ext-installed="">
+    <div class="wrapper">
+        <header class="main-header">
+            <!-- Logo -->
+            <a href="https://mycarparks.com/admin/Dashboard" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+<!--                <span class="logo-mini"><b>A</b>LT</span>-->
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"><b>Administrator</b></span>
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button-->
+                <a href="https://mycarparks.com/admin/company#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- User Account: style can be found in dropdown.less -->
+                        <li><a id="date_time1">2021 May 11</a></li>
+                        <li><a id="date_time2">Tuesday 12:34:28</a></li>
+                        <script type="text/javascript">window.onload = date_time('date_time1', 'date_time2');</script>
+                        <li class="dropdown user user-menu">
+                            <a href="https://mycarparks.com/admin/company#" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="./CompanyList_files/user2-160x160.jpg" class="user-image" alt="User Image">
+                                <span class="hidden-xs">Admin</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- User image -->
+                                <li class="user-header">
+                                    <img src="./CompanyList_files/user2-160x160.jpg" class="img-circle" alt="User Image">
+                                    <p>
+
+                                        <small>ADMINISTRATOR</small>
+                                    </p>
+                                </li>
+                                <!-- Menu Footer-->
+                                <li class="user-footer">
+                                    <!--                            <div class="pull-left">
+                                                                    <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                                                </div>-->
+                                    <div class="pull-right">
+                                        <a href="https://mycarparks.com/admin/login/logout" class="btn btn-default btn-flat">Sign out</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Control Sidebar Toggle Button -->
+                        <!--                <li>
+                                            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                                        </li>-->
+                    </ul>
+                </div>
+            </nav>
+        </header>
+<!-- Left side column. contains the logo and sidebar -->
+<aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar" style="height: auto;">
+        <!-- Sidebar user panel -->
+<!--        <div class="user-panel">
+            <div class="pull-left image">
+                <img src="" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+                <p></p>
+                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+            </div>
+        </div>-->
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu">
+            <li class="header">MAIN NAVIGATION</li>
+                             <li class="active treeview">
+                     <a href="https://mycarparks.com/admin/dashboard">
+                         <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                     </a>
+                 </li>
+            
+                            <li><a href="https://mycarparks.com/admin/company"><i class="fa fa-home"></i> <span>Company</span></a></li>
+                                         <li><a href="https://mycarparks.com/admin/carpark"><i class="fa fa-cubes"></i> <span>Car Parks</span></a></li>
+                                            <li><a href="https://mycarparks.com/admin/createrefundnote"><i class="fa fa-download"></i> <span>Create Refund Note</span></a></li>
+                                            <li><a href="https://mycarparks.com/admin/viewinvoices"><i class="fa fa-file-pdf-o"></i> <span>View Refund Invoices</span></a></li>
+                                            <li><a href="https://mycarparks.com/admin/viewinvoices/billing"><i class="fa fa-database"></i> <span>All Company Billing</span></a></li>
+                                            <li><a href="https://mycarparks.com/admin/bookings/allbookings"><i class="fa fa-book"></i> <span>All Bookings</span></a></li>
+                                            <li class="header">USER</li>
+                            <li><a href="https://mycarparks.com/admin/login/logout"><i class="fa fa-lock text-red"></i> <span>Sign Out</span></a></li>
+        </ul>
+    </section>
+    <!-- /.sidebar -->
+</aside><!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper" style="min-height: 799px;">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Car Parks Companies
+            <small></small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="https://mycarparks.com/admin/company#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">Companies</li>
+        </ol>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><i class="ion ion-clipboard"></i> &nbsp; Company List</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="panel-body">
+                        <div class="col-md-12">
+                            <a href="https://mycarparks.com/admin/company/companyadd" class="btn btn-info pull-right"><i class="fa fa-plus"></i>&nbsp; Add New Company</a>
+                        </div>
+                                                    <div id="myModal_31" class="modal fade" role="dialog">
+                                        <div class="modal-dialog">
+
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal">×</button>
+                                                    <h4 class="modal-title text-center">Company Details</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="form-horizontal form-static">
+                                                        <div class="staticControl form-group" style="margin-bottom: 0px;">
+                                                            <label for="LocationImage" class="control-label col-md-4">Company Name</label>
+                                                            <div class="col-md-8">
+                                                                <p class="form-control-static">My Car Parks Limited</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group" style="margin-bottom: 0px;">
+                                                            <label for="LocationAddress" class="control-label col-md-4">Address</label>
+                                                            <div class="col-md-8">
+                                                                <p class="form-control-static">
+                                                                    26 Southampton Buildings<br>Holborn Gate<br>LONDON<br>WC2A 1AH<br>United Kingdom                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group" style="margin-bottom: 0px;">
+                                                            <label for="LocationParkingContactName" class="control-label col-md-4">Company Email</label>
+                                                            <div class="col-md-8">
+                                                                <p class="form-control-static">info@mycarparks.com</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group" style="margin-bottom: 0px;">
+                                                            <label for="LocationParkingPhone" class="control-label col-md-4">Phone Number</label>
+                                                            <div class="col-md-8">
+                                                                <p class="form-control-static">02074309371</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group" style="margin-bottom: 0px;">
+                                                            <label for="LocationTagline" class="control-label col-md-4">Owner Name</label>
+                                                            <div class="col-md-8">
+                                                                <p class="form-control-static">Nishthaq Ahamed</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group" style="margin-bottom: 0px;">
+                                                            <label for="LocationAlert" class="control-label col-md-4">Owner Contact Number</label>
+                                                            <div class="col-md-8">
+                                                                <p class="form-control-static">02074309371</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group" style="margin-bottom: 0px;">
+                                                            <label for="LocationParkingDescriptions" class="control-label col-md-4">Owner Email</label>
+                                                            <div class="col-md-8">
+                                                                <p class="form-control-static">ltdmycarparks@gmail.com</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group" style="margin-bottom: 0px;">
+                                                            <label for="LocationInstructions" class="control-label col-md-4">SMS Alert Enabel</label>
+                                                            <div class="col-md-8">
+                                                                <p class="form-control-static">
+                                                                    No                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group" style="margin-bottom: 0px;">
+                                                            <label for="LocationContactEmail" class="control-label col-md-4">Email Alert Enabel</label>
+                                                            <div class="col-md-8">
+                                                                <p class="form-control-static">
+                                                                    Yes                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group" style="margin-bottom: 0px;">
+                                                            <label for="LocationContactEmail" class="control-label col-md-4">Payment Gateway</label>
+                                                            <div class="col-md-8">
+                                                                <p class="form-control-static">
+                                                                    Quick Parking Payment Gateway                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group" style="margin-bottom: 0px;">
+                                                            <label for="LocationContactEmail" class="control-label col-md-4">Commission </label>
+                                                            <div class="col-md-8">
+                                                                <p class="form-control-static">
+                                                                    20.00%                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group" style="margin-bottom: 0px;">
+                                                            <label for="LocationContactEmail" class="control-label col-md-4">Username </label>
+                                                            <div class="col-md-8">
+                                                                <p class="form-control-static text-bold text-blue">
+                                                                    hanif@mycarparks.com                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group" style="margin-bottom: 0px;">
+                                                            <label for="LocationContactEmail" class="control-label col-md-4">Password </label>
+                                                            <div class="col-md-8">
+                                                                <p class="form-control-static text-bold text-blue">
+                                                                                                                                    </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-success" onclick="approveCompany(31)" data-dismiss="modal">Approve</button>
+                                                    <button type="button" class="btn btn-danger" onclick="rejectCompany(31)" data-dismiss="modal">Reject</button>
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div><div id="myModal_48" class="modal fade" role="dialog">
+                                        <div class="modal-dialog">
+
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal">×</button>
+                                                    <h4 class="modal-title text-center">Company Details</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="form-horizontal form-static">
+                                                        <div class="staticControl form-group" style="margin-bottom: 0px;">
+                                                            <label for="LocationImage" class="control-label col-md-4">Company Name</label>
+                                                            <div class="col-md-8">
+                                                                <p class="form-control-static">EALING BROADWAY</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group" style="margin-bottom: 0px;">
+                                                            <label for="LocationAddress" class="control-label col-md-4">Address</label>
+                                                            <div class="col-md-8">
+                                                                <p class="form-control-static">
+                                                                    SPRING BRIDGE ROAD<br>London<br>W5 2AA<br>United Kingdom                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group" style="margin-bottom: 0px;">
+                                                            <label for="LocationParkingContactName" class="control-label col-md-4">Company Email</label>
+                                                            <div class="col-md-8">
+                                                                <p class="form-control-static">ltdmycarparks@gmail.com</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group" style="margin-bottom: 0px;">
+                                                            <label for="LocationParkingPhone" class="control-label col-md-4">Phone Number</label>
+                                                            <div class="col-md-8">
+                                                                <p class="form-control-static">02074309371</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group" style="margin-bottom: 0px;">
+                                                            <label for="LocationTagline" class="control-label col-md-4">Owner Name</label>
+                                                            <div class="col-md-8">
+                                                                <p class="form-control-static">Nishthaq Ahamed</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group" style="margin-bottom: 0px;">
+                                                            <label for="LocationAlert" class="control-label col-md-4">Owner Contact Number</label>
+                                                            <div class="col-md-8">
+                                                                <p class="form-control-static">02074309371</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group" style="margin-bottom: 0px;">
+                                                            <label for="LocationParkingDescriptions" class="control-label col-md-4">Owner Email</label>
+                                                            <div class="col-md-8">
+                                                                <p class="form-control-static">ltdmycarparks@gmail.com</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group" style="margin-bottom: 0px;">
+                                                            <label for="LocationInstructions" class="control-label col-md-4">SMS Alert Enabel</label>
+                                                            <div class="col-md-8">
+                                                                <p class="form-control-static">
+                                                                    No                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group" style="margin-bottom: 0px;">
+                                                            <label for="LocationContactEmail" class="control-label col-md-4">Email Alert Enabel</label>
+                                                            <div class="col-md-8">
+                                                                <p class="form-control-static">
+                                                                    Yes                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group" style="margin-bottom: 0px;">
+                                                            <label for="LocationContactEmail" class="control-label col-md-4">Payment Gateway</label>
+                                                            <div class="col-md-8">
+                                                                <p class="form-control-static">
+                                                                    Quick Parking Payment Gateway                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group" style="margin-bottom: 0px;">
+                                                            <label for="LocationContactEmail" class="control-label col-md-4">Commission </label>
+                                                            <div class="col-md-8">
+                                                                <p class="form-control-static">
+                                                                    20.00%                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group" style="margin-bottom: 0px;">
+                                                            <label for="LocationContactEmail" class="control-label col-md-4">Username </label>
+                                                            <div class="col-md-8">
+                                                                <p class="form-control-static text-bold text-blue">
+                                                                    ltdmycarparks@gmail.com                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group" style="margin-bottom: 0px;">
+                                                            <label for="LocationContactEmail" class="control-label col-md-4">Password </label>
+                                                            <div class="col-md-8">
+                                                                <p class="form-control-static text-bold text-blue">
+                                                                                                                                    </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-success" onclick="approveCompany(48)" data-dismiss="modal">Approve</button>
+                                                    <button type="button" class="btn btn-danger" onclick="rejectCompany(48)" data-dismiss="modal">Reject</button>
+                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div><div id="companyListTable_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer"><div class="dt-buttons btn-group"><a class="btn btn-default buttons-csv buttons-html5 btn-sm" tabindex="0" aria-controls="companyListTable" href="https://mycarparks.com/admin/company#"><span>CSV</span></a><a class="btn btn-default buttons-print btn-sm" tabindex="0" aria-controls="companyListTable" href="https://mycarparks.com/admin/company#"><span>Print</span></a></div><table id="companyListTable" class="table table-bordered table-hover table-responsive dataTable no-footer dtr-inline" role="grid" aria-describedby="companyListTable_info"><thead>
+                                    <tr role="row"><th class="text-center sorting_asc" tabindex="0" aria-controls="companyListTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Company Name: activate to sort column descending">Company Name</th><th class="text-center sorting" tabindex="0" aria-controls="companyListTable" rowspan="1" colspan="1" aria-label="Contact Person: activate to sort column ascending">Contact Person</th><th class="text-center sorting" tabindex="0" aria-controls="companyListTable" rowspan="1" colspan="1" aria-label="Address: activate to sort column ascending">Address</th><th class="text-center sorting" tabindex="0" aria-controls="companyListTable" rowspan="1" colspan="1" aria-label="Email: activate to sort column ascending">Email</th><th class="text-center sorting" tabindex="0" aria-controls="companyListTable" rowspan="1" colspan="1" aria-label="Contact No: activate to sort column ascending">Contact No</th><th class="text-center sorting" tabindex="0" aria-controls="companyListTable" rowspan="1" colspan="1" aria-label="Is Approved: activate to sort column ascending">Is Approved</th><th class="text-center sorting" tabindex="0" aria-controls="companyListTable" rowspan="1" colspan="1" aria-label="Payment Gateway: activate to sort column ascending">Payment Gateway</th><th class="text-center sorting" tabindex="0" aria-controls="companyListTable" rowspan="1" colspan="1" aria-label="Action: activate to sort column ascending">Action</th></tr>
+                                </thead>
+                                
+                                <tbody>
+                                                                            
+                                        <!-- Modal -->
+                                    
+                                                                            
+                                        <!-- Modal -->
+                                    
+                                                                    <tr role="row" class="odd">
+                                            <td class="sorting_1">EALING BROADWAY</td>
+                                            <td>Nishthaq Ahamed</td>
+                                            <td>
+                                                SPRING BRIDGE ROAD, London, W5 2AA, United Kingdom                                            </td>
+                                            <td>ltdmycarparks@gmail.com</td>
+                                            <td>02074309371</td>
+                                            <td><span class="label label-success">Yes</span></td>
+                                            <td>
+                                                Quick Parking Payment Gateway                                            </td>
+                                            <td class="col-xs-2 text-center">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal_48"><i class="fa fa-eye"></i></button>
+                                                                                                    <a href="https://mycarparks.com/admin/carpark/create/48" class="btn btn-success"><i class="fa fa-plus"></i></a>
+
+                                                    <a href="https://mycarparks.com/admin/company/editCompany/48" class="btn btn-warning"><i class="fa fa-edit"></i></a>
+                                                    <a href="https://mycarparks.com/admin/company#" onclick="deleteCompany(48);" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                                                    
+                                            </td>
+                                        </tr><tr role="row" class="even">
+                                            <td class="sorting_1">My Car Parks Limited</td>
+                                            <td>Nishthaq Ahamed</td>
+                                            <td>
+                                                26 Southampton Buildings, Holborn Gate, LONDON, WC2A 1AH, United Kingdom                                            </td>
+                                            <td>info@mycarparks.com</td>
+                                            <td>02074309371</td>
+                                            <td><span class="label label-success">Yes</span></td>
+                                            <td>
+                                                Quick Parking Payment Gateway                                            </td>
+                                            <td class="col-xs-2 text-center">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal_31"><i class="fa fa-eye"></i></button>
+                                                                                                    <a href="https://mycarparks.com/admin/carpark/create/31" class="btn btn-success"><i class="fa fa-plus"></i></a>
+
+                                                    <a href="https://mycarparks.com/admin/company/editCompany/31" class="btn btn-warning"><i class="fa fa-edit"></i></a>
+                                                    <a href="https://mycarparks.com/admin/company#" onclick="deleteCompany(31);" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                                                    
+                                            </td>
+                                        </tr></tbody>
+                            </table><div class="dataTables_info" id="companyListTable_info" role="status" aria-live="polite">Showing 1 to 2 of 2 entries</div><div class="dataTables_paginate paging_simple_numbers" id="companyListTable_paginate"><ul class="pagination"><li class="paginate_button previous disabled" id="companyListTable_previous"><a href="https://mycarparks.com/admin/company#" aria-controls="companyListTable" data-dt-idx="0" tabindex="0">Previous</a></li><li class="paginate_button active"><a href="https://mycarparks.com/admin/company#" aria-controls="companyListTable" data-dt-idx="1" tabindex="0">1</a></li><li class="paginate_button next disabled" id="companyListTable_next"><a href="https://mycarparks.com/admin/company#" aria-controls="companyListTable" data-dt-idx="2" tabindex="0">Next</a></li></ul></div></div>
+                                                </div>
+                    <!-- /.box-body -->
+                </div>
+            </div>
+        </div>
+    </section><!-- /.content -->
+</div><!-- /.content-wrapper -->
+<link href="./CompanyList_files/buttons.bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="./CompanyList_files/fixedHeader.bootstrap.min.css" rel="stylesheet" type="text/css">
+<script src="./CompanyList_files/dataTables.buttons.min.js.download" type="text/javascript"></script>
+<script src="./CompanyList_files/buttons.bootstrap.min.js.download" type="text/javascript"></script>
+<script src="./CompanyList_files/buttons.flash.min.js.download" type="text/javascript"></script>
+<script src="./CompanyList_files/buttons.html5.min.js.download" type="text/javascript"></script>
+<script src="./CompanyList_files/buttons.print.js.download" type="text/javascript"></script>
+<script src="./CompanyList_files/dataTables.fixedHeader.min.js.download" type="text/javascript"></script>
+<script src="./CompanyList_files/jszip.min.js.download" type="text/javascript"></script>
+<script src="./CompanyList_files/pdfmake.min.js.download" type="text/javascript"></script>
+<script src="./CompanyList_files/vfs_fonts.js.download" type="text/javascript"></script>
+<script>
+                                                    $(document).ready(function () {
+                                                        var handleDataTableButtons = function () {
+                                                            if ($("#companyListTable").length) {
+                                                                $("#companyListTable").DataTable({
+                                                                    "paging": true,
+                                                                    "lengthChange": true,
+                                                                    "searching": false,
+                                                                    "ordering": true,
+                                                                    "info": true,
+                                                                    "autoWidth": false,
+                                                                    dom: "Bfrtip",
+                                                                    fixedHeader: true,
+                                                                    buttons: [
+                                                                        {
+                                                                            extend: "csv",
+                                                                            className: "btn-sm"
+                                                                        },
+                                                                        {
+                                                                            extend: "excel",
+                                                                            className: "btn-sm"
+                                                                        },
+                                                                        {
+                                                                            extend: "pdf",
+                                                                            className: "btn-sm"
+                                                                        },
+                                                                        {
+                                                                            extend: "print",
+                                                                            className: "btn-sm"
+                                                                        }
+                                                                    ],
+                                                                    responsive: true
+                                                                });
+                                                            }
+                                                        };
+
+                                                        TableManageButtons = function () {
+                                                            "use strict";
+                                                            return {
+                                                                init: function () {
+                                                                    handleDataTableButtons();
+                                                                }
+                                                            };
+                                                        }();
+
+                                                        TableManageButtons.init();
+                                                    });
+
+                                                    function deleteCompany(id) {
+
+                                                        alertify.confirm("Warning", "Are you sure, you want to delete this Company?",
+                                                                function () {
+                                                                    $.post("https://mycarparks.com/admin/company/delete/" + id)
+                                                                            .done(function (data) {
+                                                                                if (data == "1") {
+                                                                                    alertify.success('Car Park deleted successfully!');
+                                                                                    $('#companyListTable #datarow'+id).remove();
+
+                                                                                } else if(data == "2"){
+                                                                                    alertify.error('Company Delete  Failed');
+                                                                                } else if(data == "3"){
+                                                                                    alertify.error('Company not found!');
+                                                                                } else if(data == "5"){
+                                                                                    alertify.error('Delete Failed - Car Parks found for this company!');
+                                                                                } else
+                                                                                {
+                                                                                    alertify.error(data);
+                                                                                }
+
+                                                                            });
+                                                                },
+                                                                function () {
+                                                                    //alertify.error('Cancel');
+                                                                });
+                                                    }
+                                                    function approveCompany(id){
+                                                        alertify.confirm("Info", "Are you sure, you want to approve this company?",
+                                                            function () {
+                                                                $.post("https://mycarparks.com/admin/company/approveCompany/" + id)
+                                                                    .done(function (data) {
+                                                                        if (data == "1") {
+                                                                            alertify.success('The company has been approved successfully!');
+                                                                            location.reload();
+                                                                        } else
+                                                                        {
+                                                                            alertify.error("Company approval failed!");
+                                                                        }
+
+                                                                    });
+                                                            },
+                                                            function () {
+                                                            });
+                                                    }
+                                                    function rejectCompany(id){
+                                                        alertify.confirm("Info", "Are you sure, you want to reject this company?",
+                                                            function () {
+                                                                $.post("https://mycarparks.com/admin/company/rejectCompany/" + id)
+                                                                    .done(function (data) {
+                                                                        if (data == "1") {
+                                                                            alertify.success('The company has been rejected');
+                                                                            location.reload();
+                                                                        } else
+                                                                        {
+                                                                            alertify.error("Company rejection failed!");
+                                                                        }
+
+                                                                    });
+                                                            },
+                                                            function () {
+                                                            });
+                                                    }
+</script>
+<footer class="main-footer">
+    <!--   <div class="pull-right hidden-xs">
+          <b>Version</b> 2.3.3
+       </div>-->
+    <strong>Copyright © 2016 <a href="https://mycarparks.com/admin/company">Quick Parking</a></strong> All rights
+    reserved.
+</footer>
+<!-- Add the sidebar's background. This div must be placed
+     immediately after the control sidebar -->
+<div class="control-sidebar-bg" style="position: fixed; height: auto;"></div>
+</div><!-- ./wrapper -->
+
+
+</body></html>

@@ -1,0 +1,9 @@
+.tab{
+    cursor: pointer;    
+}
+
+.filtercard{
+    padding-bottom: 0px;
+    padding-top: 10px;
+    height: 80px;
+}

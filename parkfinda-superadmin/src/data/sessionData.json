@@ -1,0 +1,49 @@
+[
+    {
+        "country" : "Sri Lanka" ,
+        "operators" : "100" ,
+        "location" : "150" ,
+        "customers" : "200" ,
+        "today" : "5000" ,
+        "month" : "March" ,
+        "year_to_date" : "2022" 
+    },
+    {
+        "country" : "UK" ,
+        "operators" : "30" ,
+        "location" : "50" ,
+        "customers" : "20" ,
+        "today" : "700" ,
+        "month" : "Augest" ,
+        "year_to_date" : "2019" 
+    },
+    {
+        "country" : "USA" ,
+        "operators" : "500" ,
+        "location" : "150" ,
+        "customers" : "50" ,
+        "today" : "6000" ,
+        "month" : "January" ,
+        "year_to_date" : "2021" 
+    },
+    {
+        "country" : "Canada" ,
+        "operators" : "50" ,
+        "location" : "150" ,
+        "customers" : "200" ,
+        "today" : "5000" ,
+        "month" : "March" ,
+        "year_to_date" : "2020" 
+    },
+    {
+        "country" : "Australia" ,
+        "operators" : "100" ,
+        "location" : "210" ,
+        "customers" : "200" ,
+        "today" : "4000" ,
+        "month" : "April" ,
+        "year_to_date" : "2022" 
+    }
+]
+
+

@@ -1,0 +1,53 @@
+.teamsdropdown{
+    border-radius: 0px;
+    border-color: rgb(0, 0, 0);
+    background-color: white;
+    color: black;
+    
+}
+.userdropdown{
+    border-radius: 0px;
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    
+}
+
+.userdropdown:hover {
+    background-color: black !important;
+}
+
+.teamsdropdown:hover {
+    background-color: black !important;
+}
+
+.vl {
+    border-left: 2px solid #B9B9B9;
+    height: 50px;
+}
+
+.fieldsinput{
+    border-color: white !important;
+    padding-top: 2px;
+}
+
+.search{
+    border-radius: 20px;
+}
+
+.side{
+    float: right;
+}
+.fieldsinput::placeholder{
+    color: rgb(0, 0, 0) !important;
+    font-weight: bold;
+    
+}
+
+.label{
+    color : #B9B9B9;
+}
+
+.filterbutton{
+    padding-top: 40xp;
+}

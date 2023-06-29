@@ -1,0 +1,567 @@
+
+<!-- saved from url=(0063)https://mycarparks.com/admin/bookings/bookingdetails/2792-95655 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Administrator</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="./Permit_files/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./Permit_files/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="./Permit_files/ionicons.min.css">
+    <!-- Bootstrap time Picker -->
+    <link rel="stylesheet" href="./Permit_files/bootstrap-timepicker.min.css">
+    <!-- Theme style -->
+    <!-- DataTables -->
+    <link rel="stylesheet" href="./Permit_files/dataTables.bootstrap.css">
+    <link href="./Permit_files/responsive.bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./Permit_files/style.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="./Permit_files/_all-skins.css">
+<!--    <link href="https://mycarparks.com/admin/assets/dist/css/skins/skin-black-light.css" rel="stylesheet" type="text/css"/>-->
+    <!-- iCheck -->
+    <link rel="stylesheet" href="./Permit_files/blue.css">
+    <link href="./Permit_files/layout.css" rel="stylesheet" type="text/css">
+    <link href="./Permit_files/style(1).css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="./Permit_files/jquery-ui.css">
+    <link href="./Permit_files/alertify.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery 2.2.3 -->
+    <script src="./Permit_files/jquery-2.2.3.min.js.download"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="./Permit_files/jquery-ui.min.js.download"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button);
+    </script>
+    <!-- Bootstrap 3.3.6 -->
+    <script src="./Permit_files/bootstrap.min.js.download"></script>
+    <!-- DataTables -->
+    <script src="./Permit_files/jquery.dataTables.min.js.download"></script>
+    <script src="./Permit_files/dataTables.bootstrap.min.js.download"></script>
+    <script src="./Permit_files/dataTables.responsive.min.js.download" type="text/javascript"></script>
+    <script src="./Permit_files/responsive.bootstrap.js.download" type="text/javascript"></script>
+    <!-- bootstrap time picker -->
+    <script src="./Permit_files/bootstrap-timepicker.min.js.download"></script>
+    <!-- FastClick -->
+    <script src="./Permit_files/fastclick.js.download"></script>
+    <!-- AdminLTE App -->
+    <script src="./Permit_files/app.min.js.download"></script>
+    <!-- Sparkline -->
+    <script src="./Permit_files/jquery.sparkline.min.js.download"></script>
+    <!-- SlimScroll 1.3.0 -->
+    <script src="./Permit_files/jquery.slimscroll.min.js.download"></script>
+    <!-- Counter Up  -->
+    <script src="./Permit_files/jquery.waypoints.js.download" type="text/javascript"></script>
+    <script src="./Permit_files/jquery.counterup.min.js.download" type="text/javascript"></script>
+
+    <script src="./Permit_files/loader.js.download" type="text/javascript"></script>
+
+
+    <!-- AdminLTE for demo purposes -->
+    <script src="./Permit_files/demo.js.download"></script>
+
+    <script src="./Permit_files/jquery.validate.js.download" type="text/javascript"></script>
+    <script type="text/javascript" src="./Permit_files/live_date_time.js.download"></script>
+    <script src="./Permit_files/daypilot-all.min.js.download" type="text/javascript"></script><style type="text/css"></style>
+    <script src="./Permit_files/jquery.form.js.download" type="text/javascript"></script>
+    <script src="./Permit_files/alertify.min.js.download" type="text/javascript"></script>
+    <script src="./Permit_files/jquery.dataTables.min.js(1).download"></script>
+    <script src="./Permit_files/dataTables.bootstrap.min.js(1).download"></script>
+    <style>
+        .form-control{
+            border-radius: 4px;
+        }
+
+        .input-group .input-group-addon{
+            border-radius: 4px;
+            background-color: #eee;
+        }
+
+        .input-group-addon:first-child {
+            border-right: 0 none;
+            border-bottom-right-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        .input-group-addon:last-child {
+            border-left: 0 none;
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+        }
+
+        table{
+            font-size: 14px;
+        }
+
+        #ui-datepicker-div{
+            z-index: 999 !important;
+        }
+        .ui-datepicker{
+            z-index: 999 !important;
+        }
+
+        .modal-backdrop{
+            z-index: 0;
+        }
+
+        .modal{
+            top: 25px;
+        }
+
+        .navbar-brand {
+            padding: 0;
+        }
+
+        .panel{
+            border-radius: 6px;
+        }
+
+        .small-box{
+            border-radius: 5px;
+        }
+
+        .small-box > .small-box-footer{
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    </style>
+
+<style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
+
+
+<body class="skin-blue sidebar-mini" data-new-gr-c-s-check-loaded="14.1010.0" data-gr-ext-installed="">
+    <div class="wrapper">
+        <header class="main-header">
+            <!-- Logo -->
+            <a href="https://mycarparks.com/admin/Dashboard" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+<!--                <span class="logo-mini"><b>A</b>LT</span>-->
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"><b>Administrator</b></span>
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button-->
+                <a href="https://mycarparks.com/admin/bookings/bookingdetails/2792-95655#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- User Account: style can be found in dropdown.less -->
+                        <li><a id="date_time1">2021 May 11</a></li>
+                        <li><a id="date_time2">Tuesday 12:32:15</a></li>
+                        <script type="text/javascript">window.onload = date_time('date_time1', 'date_time2');</script>
+                        <li class="dropdown user user-menu">
+                            <a href="https://mycarparks.com/admin/bookings/bookingdetails/2792-95655#" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="./Permit_files/user2-160x160.jpg" class="user-image" alt="User Image">
+                                <span class="hidden-xs">Admin</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- User image -->
+                                <li class="user-header">
+                                    <img src="./Permit_files/user2-160x160.jpg" class="img-circle" alt="User Image">
+                                    <p>
+
+                                        <small>ADMINISTRATOR</small>
+                                    </p>
+                                </li>
+                                <!-- Menu Footer-->
+                                <li class="user-footer">
+                                    <!--                            <div class="pull-left">
+                                                                    <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                                                </div>-->
+                                    <div class="pull-right">
+                                        <a href="https://mycarparks.com/admin/login/logout" class="btn btn-default btn-flat">Sign out</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- Control Sidebar Toggle Button -->
+                        <!--                <li>
+                                            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                                        </li>-->
+                    </ul>
+                </div>
+            </nav>
+        </header>
+<!-- Left side column. contains the logo and sidebar -->
+<aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar" style="height: auto;">
+        <!-- Sidebar user panel -->
+<!--        <div class="user-panel">
+            <div class="pull-left image">
+                <img src="" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+                <p></p>
+                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+            </div>
+        </div>-->
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu">
+            <li class="header">MAIN NAVIGATION</li>
+                             <li class="active treeview">
+                     <a href="https://mycarparks.com/admin/dashboard">
+                         <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                     </a>
+                 </li>
+            
+                            <li><a href="https://mycarparks.com/admin/company"><i class="fa fa-home"></i> <span>Company</span></a></li>
+                                         <li><a href="https://mycarparks.com/admin/carpark"><i class="fa fa-cubes"></i> <span>Car Parks</span></a></li>
+                                            <li><a href="https://mycarparks.com/admin/createrefundnote"><i class="fa fa-download"></i> <span>Create Refund Note</span></a></li>
+                                            <li><a href="https://mycarparks.com/admin/viewinvoices"><i class="fa fa-file-pdf-o"></i> <span>View Refund Invoices</span></a></li>
+                                            <li><a href="https://mycarparks.com/admin/viewinvoices/billing"><i class="fa fa-database"></i> <span>All Company Billing</span></a></li>
+                                            <li><a href="https://mycarparks.com/admin/bookings/allbookings"><i class="fa fa-book"></i> <span>All Bookings</span></a></li>
+                                            <li class="header">USER</li>
+                            <li><a href="https://mycarparks.com/admin/login/logout"><i class="fa fa-lock text-red"></i> <span>Sign Out</span></a></li>
+        </ul>
+    </section>
+    <!-- /.sidebar -->
+</aside><!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper" style="min-height: 1106px;">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+
+        <h1>
+            Parking Permit: 
+            <small>
+                2792-95655            </small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="https://mycarparks.com/admin/bookings/bookingdetails/2792-95655#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">Permit Details</li>
+        </ol>
+    </section>
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-9">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><i class="ion ion-clipboard"></i> &nbsp; Permit Details</h3>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-12&gt;">
+                                    <div class="col-md-2 pull-right">
+                                        <form action="https://mycarparks.com/admin/pdfmakerbooking/create_pdf/56/420" target="_blank">
+                                            <button type="submit" data-toggle="tooltip" title="" id="cmd" class="btn btn-lg hidden-print bg-gray" target="_blank" data-original-title="Generate PDF">
+                                                <span class="fa fa-file-pdf-o" style="font-size: 30px; background-color: #fff; color: #333;"></span>
+                                                PDF
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-horizontal form-static">
+                                <div class="staticControl form-group" style="margin-bottom: 0px;">
+
+                                    <label for="LocationImage" class="control-label col-md-3">
+                                        <img src="./Permit_files/noimage.jpg" style="height: 80px;">
+                                    </label>
+                                    <div class="col-md-8">
+                                        <h1 style="font-size: 24px;">Holborn Gate Car Park (2793)</h1>
+                                        <h4 style="margin-top: 0px; margin-bottom: 5px; font-weight: 500;">£30.00</h4>
+                                        <p>
+                                            26 Southampton Buildings<br>LONDON WC2A 1AH                                        </p>
+                                        <p>
+                                            <img src="./Permit_files/parkingmap.png">
+                                            <span>
+                                                Underground                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-group" style="margin-bottom: 0px;">
+
+                                    <label for="LocationParkingContactName" class="control-label col-md-3">Payment Recieved</label>
+                                    <div class="col-md-8">
+                                        <p class="form-control-static">
+                                                                                            <span class="label label-success">Yes</span>
+                                                                                    </p>
+                                    </div>
+                                </div>
+                                <div class="form-group" style="margin-bottom: 0px;">
+
+                                    <label for="LocationParkingContactName" class="control-label col-md-3">Recieved on</label>
+                                    <div class="col-md-8">
+                                        <p class="form-control-static">
+                                            2021-03-18 12:23:10                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-group" style="margin-bottom: 0px;">
+
+                                    <label for="LocationParkingContactName" class="control-label col-md-3">Status</label>
+                                    <div class="col-md-8">
+                                        <p class="form-control-static">
+                                            Booked                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-group" style="margin-bottom: 0px;">
+
+                                    <label for="LocationParkingContactName" class="control-label col-md-3">Permit Start</label>
+                                    <div class="col-md-8">
+                                        <p class="form-control-static">
+                                            April 15, 2021, 4:00 pm                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-group" style="margin-bottom: 0px;">
+
+                                    <label for="LocationParkingPhone" class="control-label col-md-3">Permit End</label>
+                                    <div class="col-md-8">
+                                        <p class="form-control-static">
+                                            April 16, 2021, 2:00 pm                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-group" style="margin-bottom: 0px;">
+
+                                    <label for="LocationTagline" class="control-label col-md-3">Number of Vehicle</label>
+                                    <div class="col-md-8">
+                                        <p class="form-control-static">
+                                            1                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-group" style="margin-bottom: 0px;">
+
+                                    <label for="LocationTagline" class="control-label col-md-3">Price</label>
+                                    <div class="col-md-8">
+                                        <p class="form-control-static">
+                                            £30.00                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-group" style="margin-bottom: 0px;">
+
+                                    <label for="LocationParkingPhone" class="control-label col-md-3">License Plate</label>
+                                    <div class="col-md-8">
+                                        <p class="form-control-static">
+                                            VN64 VYK                                        </p>
+                                    </div>
+                                </div>
+                                                                    <div class="form-group" style="margin-bottom: 0px;">
+
+                                        <label for="LocationParkingPhone" class="control-label col-md-3">Customer Name</label>
+                                        <div class="col-md-8">
+                                            <p class="form-control-static">
+                                                <i class="fa fa-user"></i> &nbsp;
+                                                Chris Lloyd                                            </p>
+                                        </div>
+                                    </div>
+                                                                    <div class="form-group" style="margin-bottom: 0px;">
+
+                                    <label for="LocationTagline" class="control-label col-md-3">Booked On</label>
+                                    <div class="col-md-8">
+                                        <p class="form-control-static">
+                                            March 18, 2021, 12:23 pm                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-group" style="margin-bottom: 0px;">
+
+                                    <label for="LocationTagline" class="control-label col-md-3">Operator Details</label>
+                                    <div class="col-md-8">
+                                        <p class="form-control-static">
+                                            <i class="fa fa-building"></i> &nbsp;
+                                            My Car Parks Limited                                        </p>
+                                                                                    <p class="form-control-static">
+                                                <i class="fa fa-user"></i> &nbsp;
+                                                Nishthaq Ahamed                                            </p>
+                                            <p class="form-control-static">
+                                                <i class="fa fa-mobile"></i> &nbsp;
+                                                02074309371                                            </p>
+                                            <p class="form-control-static">
+                                                <i class="fa fa-envelope"></i> &nbsp;
+                                                ltdmycarparks@gmail.com                                            </p>
+                                                                                </div>
+                                </div>
+                                                                    <div class="form-group" style="margin-bottom: 5px;">
+
+                                        <label for="LocationTagline" class="control-label col-md-3">Description</label>
+                                        <div class="col-md-8">
+                                            <p class="form-control-static">
+                                                Max Height 1.63 meters. The spaces are suitable for vehicles up to the size of a Large - (4x4). This is a basement Car Park with CCTV, Security Lighting. The car park has 24/7 access. Located close to Holborn Circus, Hatton Gardens, Fleet Street, Chancery Lane and Fetter Lane. 30 seconds walk to Chancery Lane station.                                            </p>
+                                        </div>
+                                    </div>
+                                                                    <div class="form-group" style="margin-bottom: 5px;">
+
+                                    <label for="LocationTagline" class="control-label col-md-3">Disclaimer </label>
+                                    <div class="col-md-8">
+                                        <p class="form-control-static">
+                                            Parking is subject to the terms and conditions set out by the parking space owner or the parking operator. All parking is at the parker's own risk and My Car Parks Limited do not accept any responsibility whatsoever for any damage, loss, theft or any claim arising out of using the advertised parking space.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-group" style="margin-bottom: 0px;">
+
+                                    <label for="LocationTagline" class="control-label col-md-3">Booking Method</label>
+                                    <div class="col-md-8">
+                                        <p class="form-control-static">
+                                            MAIN WEB                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-group" style="margin-bottom: 0px;">
+
+                                    <label for="LocationTagline" class="control-label col-md-3"></label>
+                                    <div class="col-md-8">
+                                        <p class="form-control-static"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><i class="ion ion-qr-scanner"></i> &nbsp; Scan Code</h3>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="panel-body">
+                            <div id="qrcode"><img src="data:image/png;base64,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"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><i class="ion ion-map"></i> &nbsp; Location</h3>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="panel-body">
+                            <img src="./Permit_files/staticmap" style="border: 1px solid #cccccc;" alt="" width="215" height="210">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- /.content -->
+</div><!-- /.content-wrapper -->
+<script src="./Permit_files/location_info.js.download" type="text/javascript"></script>
+<script>
+    $("#add_hour_form").attr("action", "https://mycarparks.com/admin/location/createHours");
+    $(document).ready(function () {
+        $("#add_hour_form").ajaxForm({
+            beforeSend: function () {
+                $("#loding_div").html('<img src="https://mycarparks.com/admin/img/ajax-loader.gif">');
+                $("#hour_add").attr("disabled", true);
+                $("#add_hour_form").attr("action", "https://mycarparks.com/admin/location/createHours");
+            },
+            success: function (data) {
+                if (data == "success") {
+                    alertify.success("Data Saved Successfully");
+                    $("#add_hour_form").resetForm();
+                    $("#hour_add").attr("disabled", false);
+                    $("#loding_div").html('');
+                    $('#myModal_hours').modal('toggle');
+                    setTimeout(function () {
+                        window.location.reload();
+                    }, 100);
+
+                } else if (data == "error") {
+                    alertify.error("Added Failed");
+                    $("#loding_div").html('');
+                    $("#hour_add").attr("disabled", false);
+                } else
+                {
+                    //alertify.error(data);
+                    $("#hour_add").attr("disabled", false);
+                    $("#loding_div").html('');
+                }
+            },
+            error: function (err) {
+
+                //alertify.error(err);
+                $("#hour_add").attr("disabled", false);
+            }
+        });
+    });
+
+</script>
+<script src="./Permit_files/jquery-qrcode-0.14.0.js.download" type="text/javascript"></script>
+<script type="text/javascript">
+    (function () {
+        'use strict';
+
+        var jq = window.jQuery;
+        var guiValuePairs = [
+            ['size', 'px'],
+            ['minversion', ''],
+            ['quiet', ' modules'],
+            ['radius', '%'],
+            ['msize', '%'],
+            ['mposx', '%'],
+            ['mposy', '%']
+        ];
+
+        function updateGui() {
+            jq.each(guiValuePairs, function (idx, pair) {
+                var $label = jq('label[for="' + pair[0] + '"]');
+                $label.text($label.text().replace(/:.*/, ': ' + jq('#' + pair[0]).val() + pair[1]));
+            });
+        }
+
+        function updateQrCode() {
+            var options = {
+                render: 'image',
+                ecLevel: 'H',
+                minVersion: parseInt(8, 10),
+                fill: '#333333',
+                background: '#ffffff',
+                // fill: jq('#img-buffer')[0],
+
+                text: "2792-95655 | VN64 VYK | 2021-04-15 | 4:00 pm | 2021-04-16 | 2:00 pm | Holborn Gate Car Park (2242) | 26 Southampton Buildings LONDON WC2A 1AH",
+                size: parseInt(200, 10),
+                radius: parseInt(50, 10) * 0.01,
+                quiet: parseInt(1, 10),
+                mode: parseInt(2, 10),
+                mSize: parseInt(11, 10) * 0.01,
+                mPosX: parseInt(50, 10) * 0.01,
+                mPosY: parseInt(50, 10) * 0.01,
+                label: '',
+                fontname: 'Ubuntu',
+                fontcolor: '#ff9818',
+                image: ''
+            };
+
+            jq('#qrcode').empty().qrcode(options);
+        }
+
+        function update() {
+            updateGui();
+            updateQrCode();
+        }
+
+        function init() {
+            jq(window).load(update);
+            update();
+        }
+
+        jq(init);
+    }());
+
+</script>
+<footer class="main-footer">
+    <!--   <div class="pull-right hidden-xs">
+          <b>Version</b> 2.3.3
+       </div>-->
+    <strong>Copyright © 2016 <a href="https://mycarparks.com/admin/bookings/bookingdetails/2792-95655">Quick Parking</a></strong> All rights
+    reserved.
+</footer>
+<!-- Add the sidebar's background. This div must be placed
+     immediately after the control sidebar -->
+<div class="control-sidebar-bg" style="position: fixed; height: auto;"></div>
+</div><!-- ./wrapper -->
+
+
+</body></html>
